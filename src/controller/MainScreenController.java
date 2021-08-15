@@ -20,10 +20,8 @@ import java.io.IOException;
 
 /**
  * Controller for the MainScreen.fxml. Also provides ID for adding parts and products.
- * RUNTIME ERROR, first errors when developing this application occurred from this class.
- * Non-stop processes of learning how to load a new Stage, Scene and FXML Loader.
- * Errors of trying to pass data before loading and communicating data back to this class without showAndWait().
- * FUTURE ENHANCEMENT further developing of the TableViews to include custom data formatting. Such as the price column = $0.00
+ * <p>RUNTIME ERROR, first errors when developing this application occurred from this class. Non-stop processes of learning how to load a new Stage, Scene and FXML Loader. Errors of trying to pass data before loading and communicating data back to this class without showAndWait().</p>
+ * <p>FUTURE ENHANCEMENT further developing of the TableViews to include custom data formatting. Such as the price column = $0.00</p>
  */
 public class MainScreenController {
     private Stage stage;

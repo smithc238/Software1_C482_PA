@@ -6,12 +6,9 @@ import javafx.stage.Stage;
 
 /**
  * PartMenu abstract class provides link to all fxml features on PartMenu.fxml.
- * Reducing redundancy between the Add and Modify Part controllers.
- * RUNTIME ERROR created the check functions as required to ensure "Max > Inv > Min".
- * When applying them as helpers in the getFieldValues function, took a minute to realize the order mattered.
- * As the checks also gave the variables values, so I kept seeing the "Inv > Max error" since Max was initialized as 0.
- * Could definitely refine the functions more.
- * FUTURE ENHANCEMENT set the partSourceListener to return another value other than boolean when another Part Class is added.
+ * <p>Reducing redundancy between the Add and Modify Part controllers.</p>
+ * <p>RUNTIME ERROR created the check functions as required to ensure "Max &gt; Inv &gt; Min". When applying them as helpers in the getFieldValues function, took a minute to realize the order mattered. As the checks also gave the variables values, so I kept seeing the "Inv &gt; Max error" since Max was initialized as 0. Could definitely refine the functions more.</p>
+ * <p>FUTURE ENHANCEMENT set the partSourceListener to return another value other than boolean when another Part Class is added.</p>
  */
 public abstract class PartMenu {
     protected String partName;

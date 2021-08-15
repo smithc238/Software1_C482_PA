@@ -1,5 +1,8 @@
 
 # WGU Software I - C482 Performance Assessment
+Performance Assessment: Software I - QKM2
+
+Challenging assessment and first time working with Java as well as JavaFX library. In this project there is plenty I can approve upon and attempted to exceed the standard in some areas. However, it meets the requirements and its time to submit.
 
 Listed below are the Performance Assessment instructions
 

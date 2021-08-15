@@ -2,6 +2,8 @@ package model;
 
 /**
  * Out Source Part class, subclass of Part.
+ * <p>No Errors to declare.</p>
+ * <p>FUTURE ENHANCEMENT establish business rules for company name.</p>
  */
 public class OutSourced extends Part {
     private String companyName;

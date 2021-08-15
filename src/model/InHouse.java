@@ -2,6 +2,8 @@ package model;
 
 /**
  * InHouse part class that is subclass of Part.
+ * <p>No Errors to Declare</p>
+ * <p>FUTURE ENHANCEMENT establish business rules for machine ID.</p>
  */
 public class InHouse extends Part {
     private int machineId;

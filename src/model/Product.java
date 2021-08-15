@@ -5,8 +5,8 @@ import javafx.collections.ObservableList;
 
 /**
  * Product class. Contains associated parts list.
- * RUNTIME ERROR forgot to add = FXCollections.observableArrayList() to associated Parts.
- * FUTURE ENHANCEMENT add a clone method for deep copy.
+ * <p>RUNTIME ERROR forgot to add = FXCollections.observableArrayList() to associated Parts.</p>
+ * <p>FUTURE ENHANCEMENT add a clone method for deep copy.</p>
  */
 public class Product {
 

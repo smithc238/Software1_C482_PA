@@ -5,9 +5,8 @@ import javafx.collections.ObservableList;
 
 /**
  * Inventory class. Container for all parts and products.
- * RUNTIME ERROR forgot to make ObservableList = FXCollections.observableArrayList();
- * FUTURE ENHANCEMENT make partID also return a List to allow more than 1 return for searches with .contains().
- * The same as I did for String search.
+ * <p>RUNTIME ERROR forgot to make ObservableList = FXCollections.observableArrayList();</p>
+ * <p>FUTURE ENHANCEMENT make partID also return a List to allow more than 1 return for searches with .contains(). The same as I did for String search.</p>
  */
 public class Inventory {
     private static ObservableList<Part> allParts = FXCollections.observableArrayList();

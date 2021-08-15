@@ -15,9 +15,8 @@ import java.util.Objects;
 /**
  * Main Class for the Inventory Application.
  * Contains Sample parts and products.
- * RUNTIME ERROR forget to add sample associated parts to products.
- * FUTURE ENHANCEMENT depending on user needs and requirements would develop best persistent storage solution,
- * sorting and search algorithms to make data more efficient. Used only simple for loops for this small dataset.
+ * <p>RUNTIME ERROR forget to add sample associated parts to products.</p>
+ * <p>FUTURE ENHANCEMENT depending on user needs and requirements would develop best persistent storage solution, sorting and search algorithms to make data more efficient. Used only simple for loops for this small dataset.</p>
  */
 public class InventoryApp extends Application {
 
@@ -51,8 +50,8 @@ public class InventoryApp extends Application {
         product1.addAssociatedPart(part1);
         product2.addAssociatedPart(part2);
         product2.addAssociatedPart(part3);
-        product4.addAssociatedPart(part1);
-        product4.addAssociatedPart(part4);
+        product3.addAssociatedPart(part1);
+        product3.addAssociatedPart(part4);
 
         launch(args);
     }

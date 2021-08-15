@@ -12,11 +12,8 @@ import model.Product;
 
 /**
  * ProductMenu abstract class provides link to ProductMenu.fxml features.
- * RUNTIME ERROR most issues came with the associatedParts List in the product.
- * Needed a new Product Object instance with both the Add and Modify product controllers.
- * A solution which I used was make the new instance in the sub controllers with the reference in this class.
- * This allowed this class to keep the Add and Remove associatedPartListeners'.
- * FUTURE ENHANCEMENT add more data formatting to the TableViews to convey more information. I.E. inventory level = 5/10 Max
+ * <p>RUNTIME ERROR most issues came with the associatedParts List in the product. Needed a new Product Object instance with both the Add and Modify product controllers. A solution which I used was make the new instance in the sub controllers with the reference in this class. This allowed this class to keep the Add and Remove associatedPartListeners'.</p>
+ * <p>FUTURE ENHANCEMENT add more data formatting to the TableViews to convey more information. I.E. inventory level = 5/10 Max</p>
  */
 public abstract class ProductMenu {
     protected Product product;
@@ -242,7 +239,6 @@ public abstract class ProductMenu {
             productErrorLabel.setText(productErrorLabel.getText() + "\nInventory is not a number (integer).");
             return false;
         }
-        System.out.println("Inv = " + this.productInv);
         if (this.productInv > this.productMax) {
             System.out.println("Inv - Max error");
             productErrorLabel.setVisible(true);

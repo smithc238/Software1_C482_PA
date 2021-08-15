@@ -8,9 +8,8 @@ import model.Part;
 
 /**
  * Modify Part Controller for the PartMenu.fxml, subclass of PartMenu.
- * RUNTIME ERROR tried to use the retrievePart function prior to the fxmlloader.load() in
- * the MainController. Placing after solved the issue.
- * FUTURE ENHANCEMENT make parts similar to products with options of having associated parts for assemblies or components.
+ * <p>RUNTIME ERROR tried to use the retrievePart function prior to the fxmlloader.load() in the MainController. Placing after solved the issue.</p>
+ * <p>FUTURE ENHANCEMENT make parts similar to products with options of having associated parts for assemblies or components.</p>
  */
 public class ModifyPartController extends PartMenu {
     private int partIndex;

@@ -7,10 +7,8 @@ import model.OutSourced;
 
 /**
  * Add Part Controller for PartMenu.fxml, subclass of PartMenu.
- * RUNTIME ERROR, MainScreen controller would generate another ID if I clicked cancel instead of save.
- * Tried to use saveButtonListener as a boolean return type in the MainScreenController, it caused 2 objects
- * to be created as it invoked it to get the return. Solution was the addComplete boolean variable.
- * FUTURE ENHANCEMENT make form fields use inline validation for better user experience.
+ * <p>RUNTIME ERROR, MainScreen controller would generate another ID if I clicked cancel instead of save.Tried to use saveButtonListener as a boolean return type in the MainScreenController, it caused 2 objects to be created as it invoked it to get the return. Solution was the addComplete boolean variable.</p>
+ * <p>FUTURE ENHANCEMENT make form fields use inline validation for better user experience.</p>
  */
 public class AddPartController extends PartMenu {
     private int nextID;
