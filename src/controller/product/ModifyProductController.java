@@ -6,7 +6,7 @@ import model.Part;
 import model.Product;
 
 /**
- * Controller for ProductMenu to Modify Products.
+ * Controller for ProductMenu.fxml to Modify Products.
  * <p>RUNTIME ERROR needed to make a deeper copy of the Product object to access associated parts. Simply making the Product instance reference the selected product made unwanted permanent changes.</p>
  * <p>FUTURE ENHANCEMENT might need to make a better copy machine for complete deep copy if Product gets more complex. Only made the function for the associated parts.</p>
  */

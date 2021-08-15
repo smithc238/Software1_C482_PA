@@ -12,8 +12,9 @@ import model.Product;
 
 /**
  * ProductMenu abstract class provides link to ProductMenu.fxml features.
- * <p>RUNTIME ERROR most issues came with the associatedParts List in the product. Needed a new Product Object instance with both the Add and Modify product controllers. A solution which I used was make the new instance in the sub controllers with the reference in this class. This allowed this class to keep the Add and Remove associatedPartListeners'.</p>
- * <p>FUTURE ENHANCEMENT add more data formatting to the TableViews to convey more information. I.E. inventory level = 5/10 Max</p>
+ * <p>Subclasses include Add and Modify Product controllers.</p>
+ * <p>RUNTIME ERROR most issues came with the associatedParts List. Needed a new Product Object instance with both the Add and Modify product controllers to ensure changes where only saved with the saveButton. A solution which I used was make the new instance in the sub controllers with the reference in this class. This allowed this class to keep the Add and Remove associatedPartListeners.</p>
+ * <p>FUTURE ENHANCEMENT add data formatting to the TableViews to convey more information in limited space. I.E. inventory level = 5 / 10 </p>
  */
 public abstract class ProductMenu {
     protected Product product;

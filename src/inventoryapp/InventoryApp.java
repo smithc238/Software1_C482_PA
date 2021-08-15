@@ -14,12 +14,16 @@ import java.util.Objects;
 
 /**
  * Main Class for the Inventory Application.
- * Contains Sample parts and products.
  * <p>RUNTIME ERROR forget to add sample associated parts to products.</p>
  * <p>FUTURE ENHANCEMENT depending on user needs and requirements would develop best persistent storage solution, sorting and search algorithms to make data more efficient. Used only simple for loops for this small dataset.</p>
  */
 public class InventoryApp extends Application {
 
+    /**
+     * Start method for Main Class. Setting the primary stage with MainScreen.fxml.
+     * @param primaryStage javafx primaryStage
+     * @throws Exception primary stage did not load.
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/MainScreen.fxml")));
@@ -29,6 +33,11 @@ public class InventoryApp extends Application {
         primaryStage.show();
     }
 
+    /**
+     * Main method to start application.
+     * <p>Included sample Parts and Products for convenience.</p>
+     * @param args array of arguments for the application.
+     */
     public static void main(String[] args) {
 //      Sample Parts and Products.
         InHouse part1 = new InHouse(1, "Washer", 0.10, 30,5,150,12);

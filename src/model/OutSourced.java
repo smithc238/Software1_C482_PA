@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Out Source Part class, subclass of Part.
+ * Out Source Part class, subclass of Part. One of two options for Parts.
  * <p>No Errors to declare.</p>
  * <p>FUTURE ENHANCEMENT establish business rules for company name.</p>
  */

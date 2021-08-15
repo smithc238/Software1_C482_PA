@@ -5,9 +5,9 @@ import model.Inventory;
 import model.Product;
 
 /**
- * Controller for ProductMenu to Add new Products.
- * <p>RUNTIME ERROR after making the ProductMenu.initialize() to include the associatedPart TableViews, I realized that it didn't help that I Override the function here. Quick solution was to call the function in this instance.</p>
- * <p>FUTURE ENHANCEMENT add icons to the GUI instead of text on buttons. I.E. plus symbol for add.</p>
+ * Controller for ProductMenu.fxml to Add new Products.
+ * <p>RUNTIME ERROR after making the ProductMenu.initialize() to include the associatedPart TableViews, I realized that it didn't help to Override the function here causing the TableViews not to load. Quick solution was to call the super.initialize() inside the function.</p>
+ * <p>FUTURE ENHANCEMENT add icons to the GUI instead of text on buttons as well as reorganize button and form field locations.</p>
  */
 public class AddProductController extends ProductMenu {
     private int nextID;

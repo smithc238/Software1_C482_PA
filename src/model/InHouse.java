@@ -1,7 +1,7 @@
 package model;
 
 /**
- * InHouse part class that is subclass of Part.
+ * InHouse part class that is subclass of Part. One of two options for Parts.
  * <p>No Errors to Declare</p>
  * <p>FUTURE ENHANCEMENT establish business rules for machine ID.</p>
  */
