@@ -1,0 +1,33 @@
+/* mainInventory css */
+
+.menuTitle {
+  font-weight: bold;
+  font-size: 20px;
+  -fx-font-weight: bold;
+  -fx-font-size: 20px;
+
+ }
+
+ .subMenuTitle {
+   font-weight: bold;
+   font-size: 15px;
+  -fx-font-weight: bold;
+  -fx-font-size: 15px;
+ }
+
+ .mainBoxSection {
+   border: 2px, solid, black;
+   -fx-border-width: 2px;
+   -fx-border-style: solid;
+   -fx-border-color: black;
+   -fx-border-radius: 2em;
+ }
+
+ .errorMessages {
+   font-weight: bold;
+   font-size: 13px;
+   color: AF0606;
+   -fx-font-size: 13px;
+   -fx-font-weight: bold;
+   -fx-text-fill: #AF0606;
+ }

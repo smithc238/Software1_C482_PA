@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="600.0" prefWidth="1100.0" styleClass="mainBoxSection" stylesheets="@InventoryApp.css">
+               <children>
+                  <VBox prefWidth="450.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="550.0">
+                           <children>
+                              <Label fx:id="productTitleLabel" layoutX="90.0" layoutY="77.0" styleClass="subMenuTitle" stylesheets="@InventoryApp.css" text="Add Product" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="250.0" prefWidth="440.0">
+                           <children>
+                              <TextField fx:id="productIdField" disable="true" editable="false" focusTraversable="false" layoutX="145.0" layoutY="27.0" prefHeight="24.0" prefWidth="170.0" promptText="Auto Gen -Disabled" />
+                              <Label fx:id="productMinLabel" layoutX="258.0" layoutY="205.0" text="Min" />
+                              <TextField fx:id="productNameField" layoutX="145.0" layoutY="71.0" prefWidth="170.0" />
+                              <TextField fx:id="productInvField" layoutX="145.0" layoutY="115.0" prefWidth="100.0" />
+                              <TextField fx:id="productPriceField" layoutX="145.0" layoutY="160.0" prefWidth="100.0" />
+                              <TextField fx:id="productMaxField" layoutX="145.0" layoutY="201.0" prefWidth="100.0" />
+                              <TextField fx:id="productMinField" layoutX="295.0" layoutY="201.0" prefHeight="24.0" prefWidth="100.0" />
+                              <GridPane layoutX="58.0" layoutY="23.0" prefHeight="207.0" prefWidth="80.0" vgap="10.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label fx:id="productIdLabel" text="ID" />
+                                    <Label fx:id="productNameLabel" text="Name" GridPane.rowIndex="1" />
+                                    <Label fx:id="productInvLabel" text="Inv" GridPane.rowIndex="2" />
+                                    <Label fx:id="productPriceLabel" text="Price/Cost" GridPane.rowIndex="3" />
+                                    <Label fx:id="productMaxLabel" text="Max" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="210.0" prefWidth="413.0">
+                           <children>
+                              <Label fx:id="productErrorLabel" alignment="TOP_LEFT" layoutX="90.0" layoutY="2.0" prefHeight="189.0" prefWidth="316.0" styleClass="errorMessages" stylesheets="@InventoryApp.css" visible="false" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox prefWidth="650.0">
+                     <children>
+                        <Pane prefHeight="50.0">
+                           <children>
+                              <TextField fx:id="partSearchField" layoutX="413.0" layoutY="8.0" onKeyTyped="#partSearchListener" prefWidth="200.0" promptText="Search Part by ID or Name" />
+                              <Label fx:id="partSearchError" layoutX="227.0" layoutY="12.0" styleClass="errorMessages" stylesheets="@InventoryApp.css" text="Error: Part Not Found." visible="false" />
+                           </children>
+                        </Pane>
+                        <TableView fx:id="partTableView" prefHeight="200.0">
+                          <columns>
+                            <TableColumn fx:id="partIdCol" prefWidth="83.0" text="Part ID" />
+                            <TableColumn fx:id="partNameCol" prefWidth="222.0" text="Part Name" />
+                              <TableColumn fx:id="partInvCol" prefWidth="134.0" text="Inventory Level" />
+                              <TableColumn fx:id="partPriceCol" prefWidth="192.0" text="Price/ Cost per Unit" />
+                          </columns>
+                        </TableView>
+                        <Pane prefHeight="50.0">
+                           <children>
+                              <Button fx:id="addPartButton" layoutX="487.0" layoutY="8.0" mnemonicParsing="false" onAction="#addPartListener" prefWidth="65.0" text="Add" />
+                           </children>
+                        </Pane>
+                        <TableView fx:id="associatedPartTable" prefHeight="200.0">
+                          <columns>
+                            <TableColumn fx:id="associatedIdCol" prefWidth="83.0" text="Part ID" />
+                            <TableColumn fx:id="associatedNameCol" prefWidth="222.0" text="Part Name" />
+                              <TableColumn fx:id="associatedInvCol" prefWidth="134.0" text="Inventory Level" />
+                              <TableColumn fx:id="associatedPriceCol" prefWidth="192.0" text="Price/ Cost per Unit" />
+                          </columns>
+                        </TableView>
+                        <Pane prefHeight="100.0">
+                           <children>
+                              <Button fx:id="removeSelectedPartButton" layoutX="441.0" layoutY="14.0" mnemonicParsing="false" onAction="#removePartListener" text="Remove Selected Part" />
+                              <Button fx:id="productSaveButton" layoutX="447.0" layoutY="57.0" mnemonicParsing="false" onAction="#saveButtonListener" prefWidth="65.0" text="Save" />
+                              <Button fx:id="productCancelButton" layoutX="534.0" layoutY="57.0" mnemonicParsing="false" onAction="#cancelButtonListener" prefWidth="65.0" text="Cancel" />
+                           </children>
+                        </Pane>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
